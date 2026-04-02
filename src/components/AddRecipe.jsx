@@ -811,7 +811,7 @@ Pasos:
             </div>
             {formData.ingredients.length > 0 ? (
               <div style={{ 
-                backgroundColor: 'rgba(233, 237, 198, 0.3)', 
+                backgroundColor: 'white', 
                 borderRadius: '12px', 
                 padding: '0.5rem',
                 maxHeight: '300px',
@@ -819,39 +819,27 @@ Pasos:
               }}>
                 {formData.ingredients.map((ing, index) => (
                   <div key={index} style={{ 
-                    padding: '0.875rem 1.25rem', 
-                    backgroundColor: 'white', 
-                    borderRadius: '8px', 
-                    marginBottom: '0.375rem',
+                    padding: '0.75rem 1rem', 
+                    borderBottom: '1px solid #eee',
                     fontSize: '1rem',
                     lineHeight: 1.5,
-                    border: '1px solid #e8e8e8',
-                    position: 'relative'
+                    color: '#1a1a1a',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center'
                   }}>
-                    <span style={{ 
-                      color: '#1a1a1a', 
-                      fontWeight: 500,
-                      wordBreak: 'break-word',
-                      display: 'block',
-                      paddingRight: '2rem'
-                    }}>
-                      {ing}
-                    </span>
+                    <span style={{ flex: 1 }}>{ing}</span>
                     <button 
                       onClick={() => removeIngredient(index)} 
                       title="Eliminar"
                       style={{ 
-                        position: 'absolute',
-                        right: '0.5rem',
-                        top: '50%',
-                        transform: 'translateY(-50%)',
                         background: 'none', 
                         border: 'none', 
                         cursor: 'pointer', 
-                        color: '#bbb', 
-                        padding: '0.5rem', 
-                        fontSize: '1.25rem', 
-                        lineHeight: 1
+                        color: '#ccc', 
+                        fontSize: '1.25rem',
+                        padding: '0 0.5rem',
+                        marginLeft: '0.5rem'
                       }}
                     >×</button>
                   </div>
@@ -887,7 +875,7 @@ Pasos:
             </div>
             {formData.steps.length > 0 ? (
               <div style={{ 
-                backgroundColor: 'rgba(233, 237, 198, 0.3)', 
+                backgroundColor: 'white', 
                 borderRadius: '12px', 
                 padding: '0.5rem',
                 maxHeight: '350px',
@@ -895,47 +883,38 @@ Pasos:
               }}>
                 {formData.steps.map((step, index) => (
                   <div key={index} style={{ 
-                    padding: '1rem 1.25rem', 
-                    backgroundColor: 'white', 
-                    borderRadius: '8px', 
-                    marginBottom: '0.375rem',
+                    padding: '1rem', 
+                    borderBottom: '1px solid #eee',
                     display: 'flex', 
-                    gap: '1rem',
+                    gap: '0.75rem',
                     alignItems: 'flex-start',
                     fontSize: '1rem',
-                    lineHeight: 1.6,
-                    border: '1px solid #e8e8e8',
-                    position: 'relative'
+                    lineHeight: 1.6
                   }}>
                     <span style={{ 
                       backgroundColor: '#3d6b4f', 
                       color: 'white', 
-                      minWidth: '28px', 
-                      width: '28px',
-                      height: '28px', 
+                      minWidth: '24px', 
+                      height: '24px', 
                       borderRadius: '50%', 
                       display: 'flex', 
                       alignItems: 'center', 
                       justifyContent: 'center',
-                      fontSize: '0.85rem',
+                      fontSize: '0.8rem',
                       fontWeight: 600,
                       flexShrink: 0
                     }}>{index + 1}</span>
-                    <span style={{ flex: 1, wordBreak: 'break-word', color: '#1a1a1a', fontWeight: 400 }}>{step}</span>
+                    <span style={{ flex: 1, color: '#1a1a1a' }}>{step}</span>
                     <button 
                       onClick={() => removeStep(index)}
                       title="Eliminar"
                       style={{ 
-                        position: 'absolute',
-                        right: '0.5rem',
-                        top: '0.75rem',
                         background: 'none', 
                         border: 'none', 
                         cursor: 'pointer', 
-                        color: '#bbb', 
-                        padding: '0.5rem', 
-                        fontSize: '1.25rem', 
-                        lineHeight: 1
+                        color: '#ccc', 
+                        fontSize: '1.25rem',
+                        padding: '0 0.25rem'
                       }}
                     >×</button>
                   </div>
