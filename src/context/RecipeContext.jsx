@@ -3,6 +3,8 @@ import { supabase } from '../lib/supabase'
 import { useAuth } from './AuthContext'
 
 const RecipeContext = createContext()
+const LOCAL_STORAGE_KEY = 'milenaroma_recipes'
+const LOCAL_PHOTOS_KEY = 'milenaroma_photos'
 
 export function RecipeProvider({ children }) {
   const { user } = useAuth()
@@ -10,7 +12,6 @@ export function RecipeProvider({ children }) {
   const [photos, setPhotos] = useState([])
   const [loading, setLoading] = useState(true)
 
-  // Load recipes and photos when user changes
   useEffect(() => {
     if (user) {
       loadRecipes()
@@ -24,76 +25,158 @@ export function RecipeProvider({ children }) {
 
   const loadRecipes = async () => {
     setLoading(true)
-    const { data, error } = await supabase
-      .from('recipes')
-      .select('*')
-      .order('created_at', { ascending: false })
+    try {
+      const { data, error } = await supabase
+        .from('recipes')
+        .select('*')
+        .order('created_at', { ascending: false })
 
-    if (!error && data) {
-      setRecipes(data)
+      if (error) throw error
+
+      if (data && data.length > 0) {
+        setRecipes(data)
+      } else {
+        const localRecipes = localStorage.getItem(LOCAL_STORAGE_KEY)
+        if (localRecipes) {
+          setRecipes(JSON.parse(localRecipes))
+        }
+      }
+    } catch (error) {
+      console.error('Error loading recipes from Supabase:', error)
+      const localRecipes = localStorage.getItem(LOCAL_STORAGE_KEY)
+      if (localRecipes) {
+        setRecipes(JSON.parse(localRecipes))
+      }
     }
     setLoading(false)
   }
 
   const loadPhotos = async () => {
-    const { data, error } = await supabase
-      .from('photos')
-      .select('*')
-      .order('created_at', { ascending: false })
+    try {
+      const { data, error } = await supabase
+        .from('photos')
+        .select('*')
+        .order('created_at', { ascending: false })
 
-    if (!error && data) {
-      setPhotos(data)
+      if (!error && data) {
+        setPhotos(data)
+      }
+    } catch (error) {
+      console.error('Error loading photos:', error)
     }
   }
 
   const addRecipe = async (recipe) => {
-    if (!user) return { error: 'No user logged in' }
-
-    const newRecipe = {
+    const recipeWithId = {
       ...recipe,
-      user_id: user.id
+      id: Date.now().toString(),
+      created_at: new Date().toISOString()
     }
 
-    const { data, error } = await supabase
-      .from('recipes')
-      .insert(newRecipe)
-      .select()
-      .single()
-
-    if (!error && data) {
-      setRecipes(prev => [data, ...prev])
+    if (!user) {
+      const saved = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]')
+      saved.unshift(recipeWithId)
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(saved))
+      setRecipes(prev => [recipeWithId, ...prev])
+      return { data: recipeWithId, error: null }
     }
-    return { data, error }
+
+    try {
+      const { data, error } = await supabase
+        .from('recipes')
+        .insert([{
+          title: recipe.title,
+          content: recipe.content,
+          category: recipe.category,
+          image_url: recipe.image_url,
+          servings: recipe.servings || 4,
+          time: recipe.time || '',
+          difficulty: recipe.difficulty || 'Fácil',
+          user_id: user.id
+        }])
+        .select()
+        .single()
+
+      if (error) throw error
+
+      if (data) {
+        setRecipes(prev => [data, ...prev])
+        const localRecipes = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]')
+        localRecipes.unshift(data)
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(localRecipes))
+        return { data, error: null }
+      }
+    } catch (error) {
+      console.error('Error saving to Supabase, saving locally:', error)
+      const saved = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]')
+      saved.unshift(recipeWithId)
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(saved))
+      setRecipes(prev => [recipeWithId, ...prev])
+      return { data: recipeWithId, error: null }
+    }
+
+    return { data: recipeWithId, error: null }
   }
 
   const editRecipe = async (id, updates) => {
-    const { data, error } = await supabase
-      .from('recipes')
-      .update(updates)
-      .eq('id', id)
-      .select()
-      .single()
-
-    if (!error && data) {
-      setRecipes(prev => prev.map(r => r.id === id ? data : r))
+    if (!user) {
+      const localRecipes = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]')
+      const index = localRecipes.findIndex(r => r.id === id)
+      if (index !== -1) {
+        localRecipes[index] = { ...localRecipes[index], ...updates }
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(localRecipes))
+        setRecipes(localRecipes)
+        return { data: localRecipes[index], error: null }
+      }
     }
-    return { data, error }
+
+    try {
+      const { data, error } = await supabase
+        .from('recipes')
+        .update(updates)
+        .eq('id', id)
+        .select()
+        .single()
+
+      if (error) throw error
+
+      if (data) {
+        setRecipes(prev => prev.map(r => r.id === id ? data : r))
+      }
+      return { data, error: null }
+    } catch (error) {
+      console.error('Error updating recipe:', error)
+      return { data: null, error }
+    }
   }
 
   const removeRecipe = async (id) => {
-    const { error } = await supabase
-      .from('recipes')
-      .delete()
-      .eq('id', id)
-
-    if (!error) {
-      setRecipes(prev => prev.filter(r => r.id !== id))
+    if (!user) {
+      const localRecipes = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]')
+      const filtered = localRecipes.filter(r => r.id !== id)
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(filtered))
+      setRecipes(filtered)
+      return { error: null }
     }
-    return { error }
+
+    try {
+      const { error } = await supabase
+        .from('recipes')
+        .delete()
+        .eq('id', id)
+
+      if (error) throw error
+
+      setRecipes(prev => prev.filter(r => r.id !== id))
+      return { error: null }
+    } catch (error) {
+      console.error('Error deleting recipe:', error)
+      return { error }
+    }
   }
 
   const getRecipeById = (id) => {
-    return recipes.find(r => r.id === id || r.id === parseInt(id))
+    return recipes.find(r => r.id === id || r.id === parseInt(id) || r.id === String(id))
   }
 
   const searchByIngredients = (ingredients) => {
@@ -116,51 +199,67 @@ export function RecipeProvider({ children }) {
   }
 
   const addPhoto = async (photo) => {
-    if (!user) return { error: 'No user logged in' }
-
-    const newPhoto = {
-      image: photo.image,
-      caption: photo.caption || '',
-      recipe_id: photo.recipeId || null,
-      user_id: user.id
+    if (!user) {
+      const localPhotos = JSON.parse(localStorage.getItem(LOCAL_PHOTOS_KEY) || '[]')
+      const newPhoto = { ...photo, id: Date.now().toString(), liked: false }
+      localPhotos.unshift(newPhoto)
+      localStorage.setItem(LOCAL_PHOTOS_KEY, JSON.stringify(localPhotos))
+      setPhotos(localPhotos)
+      return { data: newPhoto, error: null }
     }
 
-    const { data, error } = await supabase
-      .from('photos')
-      .insert(newPhoto)
-      .select()
-      .single()
+    try {
+      const { data, error } = await supabase
+        .from('photos')
+        .insert([{
+          image: photo.image,
+          caption: photo.caption || '',
+          recipe_id: photo.recipeId || null,
+          user_id: user.id
+        }])
+        .select()
+        .single()
 
-    if (!error && data) {
-      setPhotos(prev => [data, ...prev])
+      if (error) throw error
+
+      if (data) {
+        setPhotos(prev => [data, ...prev])
+      }
+      return { data, error: null }
+    } catch (error) {
+      console.error('Error saving photo:', error)
+      const localPhotos = JSON.parse(localStorage.getItem(LOCAL_PHOTOS_KEY) || '[]')
+      const newPhoto = { ...photo, id: Date.now().toString(), liked: false }
+      localPhotos.unshift(newPhoto)
+      localStorage.setItem(LOCAL_PHOTOS_KEY, JSON.stringify(localPhotos))
+      setPhotos(localPhotos)
+      return { data: newPhoto, error: null }
     }
-    return { data, error }
   }
 
   const deletePhoto = async (id) => {
-    const { error } = await supabase
-      .from('photos')
-      .delete()
-      .eq('id', id)
+    if (!user) {
+      const localPhotos = JSON.parse(localStorage.getItem(LOCAL_PHOTOS_KEY) || '[]')
+      const filtered = localPhotos.filter(p => p.id !== id)
+      localStorage.setItem(LOCAL_PHOTOS_KEY, JSON.stringify(filtered))
+      setPhotos(filtered)
+      return { error: null }
+    }
 
-    if (!error) {
+    try {
+      const { error } = await supabase
+        .from('photos')
+        .delete()
+        .eq('id', id)
+
+      if (error) throw error
+
       setPhotos(prev => prev.filter(p => p.id !== id))
+      return { error: null }
+    } catch (error) {
+      console.error('Error deleting photo:', error)
+      return { error }
     }
-    return { error }
-  }
-
-  const updatePhoto = async (id, updates) => {
-    const { data, error } = await supabase
-      .from('photos')
-      .update(updates)
-      .eq('id', id)
-      .select()
-      .single()
-
-    if (!error && data) {
-      setPhotos(prev => prev.map(p => p.id === id ? data : p))
-    }
-    return { data, error }
   }
 
   return (
@@ -176,7 +275,6 @@ export function RecipeProvider({ children }) {
       getByCategory,
       addPhoto,
       deletePhoto,
-      updatePhoto,
       refreshRecipes: loadRecipes
     }}>
       {children}
