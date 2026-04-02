@@ -1,0 +1,1593 @@
+[
+  {
+    "id": 1,
+    "title": "Risotto de Hongos Silvestres",
+    "description": "Un clásico italiano cremoso con el aroma terroso de los hongos de temporada.",
+    "ingredients": [
+      "300g de arroz arborio",
+      "200g de hongos mixtos",
+      "1 cebolla pequeña",
+      "100ml de vino blanco seco",
+      "1L de caldo de verduras caliente",
+      "50g de mantequilla",
+      "50g de parmesano rallado",
+      "Aceite de oliva",
+      "Sal y pimienta"
+    ],
+    "steps": [
+      "Sofreír la cebolla picada en aceite hasta que esté transparente.",
+      "Añadir los hongos y cocinar hasta que doren.",
+      "Agregar el arroz y tostar por 2 minutos.",
+      "Verter el vino y dejar evaporar.",
+      "Añadir el caldo cuchara a cuchara, removiendo constantemente.",
+      "Al final, retirar del fuego y mantecar con mantequilla y parmesano."
+    ],
+    "mood": "Anfitriona",
+    "time": "40 min",
+    "difficulty": "Media",
+    "tags": ["italiana", "vegetariano", "comfort food"],
+    "substitutions": {
+      "arroz arborio": "arroz grano corto",
+      "vino blanco": "caldo con un toque de limón",
+      "parmesano": "pecorino o levadura nutricional"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Salmón al Horno con Limón",
+    "description": "Una cena ligera, elegante y lista en minutos para esos días con prisa.",
+    "ingredients": [
+      "2 filetes de salmón",
+      "1 limón",
+      "2 dientes de ajo",
+      "Aceite de oliva",
+      "Sal marina",
+      "Perejil fresco"
+    ],
+    "steps": [
+      "Precalentar el horno a 200°C.",
+      "Colocar los filetes en una bandeja con papel vegetal.",
+      "Rociar con aceite, ajo picado y rodajas de limón.",
+      "Hornear por 12-15 minutos.",
+      "Decorar con perejil fresco y servir."
+    ],
+    "mood": "Con Prisa",
+    "time": "20 min",
+    "difficulty": "Fácil",
+    "tags": ["saludable", "keto", "proteína"],
+    "substitutions": {
+      "salmón": "trucha o bacalao",
+      "limón": "lima o naranja",
+      "perejil": "cilantro o eneldo"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Magret de Pato con Reducción de Frutos Rojos",
+    "description": "El plato estrella para cuando eres la anfitriona y quieres impresionar.",
+    "ingredients": [
+      "2 magrets de pato",
+      "150g de frutos rojos",
+      "2 cucharadas de miel",
+      "50ml de vinagre balsámico",
+      "Sal maldon",
+      "Pimienta negra"
+    ],
+    "steps": [
+      "Hacer cortes en cruz en la piel del pato sin llegar a la carne.",
+      "Cocinar en sartén fría del lado de la piel hasta crujiente.",
+      "Dar la vuelta y cocinar 3 minutos más. Reservar.",
+      "En la misma sartén, añadir frutos rojos, miel y balsámico.",
+      "Reducir hasta que espese y servir sobre el pato fileteado."
+    ],
+    "mood": "Anfitriona",
+    "time": "30 min",
+    "difficulty": "Alta",
+    "tags": ["gourmet", "francesa", "especial"],
+    "substitutions": {
+      "pato": "solomillo de cerdo",
+      "frutos rojos": "mermelada de higos",
+      "vinagre balsámico": "vinagre de jerez"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Huevos Revueltos Cremosos",
+    "description": "El desayuno perfecto: suaves, cremosos y listos en 5 minutos.",
+    "ingredients": [
+      "3 huevos frescos",
+      "1 cucharada de mantequilla",
+      "2 cucharadas de leche",
+      "Sal y pimienta",
+      "Cebollino fresco"
+    ],
+    "steps": [
+      "Batir los huevos con la leche, sal y pimienta.",
+      "Derretir la mantequilla a fuego bajo.",
+      "Añadir los huevos y remover constantemente con una cuchara de madera.",
+      "Retirar del fuego cuando aún estén húmedos.",
+      "Decorar con cebollino picado."
+    ],
+    "mood": "Relajada",
+    "time": "5 min",
+    "difficulty": "Fácil",
+    "tags": ["desayuno", "rápido", "vegetariano"],
+    "substitutions": {
+      "huevos": "tofu revuelto para versión vegana",
+      "mantequilla": "aceite de oliva",
+      "cebollino": "perejil o cebolleta"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Tacos de Carnitas",
+    "description": "Tacos mexicanos auténticos con carne de cerdo desmenuzada y jugosa.",
+    "ingredients": [
+      "500g de carne de cerdo (paleta)",
+      "1 cebolla",
+      "3 dientes de ajo",
+      "Jugo de 3 naranjas",
+      "1 cucharadita de comino",
+      "Tortillas de maíz",
+      "Cilantro fresco",
+      "Limón"
+    ],
+    "steps": [
+      "Cortar la carne en trozos grandes.",
+      "Sofreír cebolla y ajo hasta dorar.",
+      "Añadir la carne y sellar por todos lados.",
+      "Agregar el jugo de naranja, comino, sal y pimienta.",
+      "Cocinar a fuego bajo 2 horas hasta que esté tierna.",
+      "Desmenuzar la carne y servir en tortillas con cilantro y limón."
+    ],
+    "mood": "Anfitriona",
+    "time": "2.5 horas",
+    "difficulty": "Media",
+    "tags": ["mexicana", "cerdo", "familiar"],
+    "substitutions": {
+      "carne de cerdo": "pollo desmenuzado o jackfruit",
+      "naranja": "limón con un poco de azúcar",
+      "tortillas de maíz": "tortillas de harina"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Ensalada César Clásica",
+    "description": "Fresca, crujiente y con el sabor inconfundible del aderezo César.",
+    "ingredients": [
+      "1 lechuga romana",
+      "100g de pan昨天的",
+      "50g de parmesano",
+      "2 filetes de anchoa",
+      "1 diente de ajo",
+      "Zumo de medio limón",
+      "Aceite de oliva",
+      "Sal y pimienta"
+    ],
+    "steps": [
+      "Tostar el pan y cortarlo en cubos.",
+      "Machacar el ajo con las anchoas.",
+      "Mezclar con el limón, aceite, sal y pimienta.",
+      "Lavar y secar la lechuga.",
+      "Mezclar todo y decorar con parmesano en lascas."
+    ],
+    "mood": "Con Prisa",
+    "time": "10 min",
+    "difficulty": "Fácil",
+    "tags": ["ensalada", "saludable", "italiana"],
+    "substitutions": {
+      "anchoas": "salsa Worcestershire",
+      "parmesano": "queso pecorino",
+      "pan昨天的": "crutones comerciales"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Spaghetti alla Carbonara",
+    "description": "La pasta italiana auténtica con salsa de huevo, queso y panceta.",
+    "ingredients": [
+      "400g de spaghetti",
+      "200g de panceta o bacon",
+      "3 huevos",
+      "100g de parmesano rallado",
+      "Pimienta negra recién molida",
+      "Sal"
+    ],
+    "steps": [
+      "Cocinar la pasta en agua con sal.",
+      "Freír la panceta hasta que esté crujiente.",
+      "Batir los huevos con el parmesano y pimienta.",
+      "Escurrir la pasta, reservar el agua.",
+      "Mezclar pasta caliente con la panceta fuera del fuego.",
+      "Añadir la mezcla de huevos y remover rápido hasta crear la salsa.",
+      "Añadir un poco de agua de pasta si es necesario."
+    ],
+    "mood": "Relajada",
+    "time": "25 min",
+    "difficulty": "Media",
+    "tags": ["italiana", "pasta", "clásica"],
+    "substitutions": {
+      "panceta": "guanciale o bacon",
+      "parmesano": "pecorino romano",
+      "spaghetti": "rigatoni o penne"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Pollo a la Naranja",
+    "description": "Un clásico de la cocina asiática con el toque agridulce perfecto.",
+    "ingredients": [
+      "4 muslos de pollo",
+      "2 naranjas",
+      "3 cucharadas de miel",
+      "2 cucharadas de salsa de soja",
+      "1 cucharadita de jengibre rallado",
+      "2 dientes de ajo",
+      "Aceite vegetal",
+      "Maicena"
+    ],
+    "steps": [
+      "Salpimentar el pollo y dorar en aceite.",
+      "Exprimir una naranja y cortar la otra en rodajas.",
+      "Mezclar el jugo con miel, soja, jengibre y ajo.",
+      "Añadir la salsa al pollo y cocinar 20 minutos.",
+      "Espesar con maicena diluida si es necesario.",
+      "Servir con arroz y rodajas de naranja."
+    ],
+    "mood": "Anfitriona",
+    "time": "35 min",
+    "difficulty": "Media",
+    "tags": ["asiática", "pollo", "dulce-salado"],
+    "substitutions": {
+      "pollo": "tofu o tempeh",
+      "miel": "azúcar moreno o agave",
+      "soja": "tamari para versión sin gluten"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Sopa de Verduras Rápida",
+    "description": "Una sopa reconfortante y nutritiva lista en menos de 30 minutos.",
+    "ingredients": [
+      "2 zanahorias",
+      "2 patatas",
+      "1 calabacín",
+      "1 puerro",
+      "1L de caldo de verduras",
+      "Aceite de oliva",
+      "Sal y pimienta",
+      "Hierbas provenzales"
+    ],
+    "steps": [
+      "Picar todas las verduras en dados.",
+      "Sofreír el puerro en aceite hasta que esté blando.",
+      "Añadir las demás verduras y rehogar 5 minutos.",
+      "Verter el caldo y cocinar 20 minutos.",
+      "Triturar o dejar con trozos según preferencia.",
+      "Sazonar con hierbas provenzales."
+    ],
+    "mood": "Con Prisa",
+    "time": "25 min",
+    "difficulty": "Fácil",
+    "tags": ["sopa", "vegetariano", "saludable"],
+    "substitutions": {
+      "caldo de verduras": "agua con pastilla de caldo",
+      "hierbas provenzales": "tomillo y romero",
+      "calabacín": "apio o nabo"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Pancakes Americanos",
+    "description": "Suaves, esponjosos y perfectos para un desayuno especial de fin de semana.",
+    "ingredients": [
+      "200g de harina",
+      "2 huevos",
+      "300ml de leche",
+      "2 cucharadas de azúcar",
+      "1 sobre de levadura",
+      "50g de mantequilla derretida",
+      "Miel o sirope de arce"
+    ],
+    "steps": [
+      "Mezclar la harina, azúcar y levadura.",
+      "Batir los huevos con la leche y la mantequilla.",
+      "Unir ambas mezclas sin sobremezclar.",
+      "Calentar una sartén antiadherente a fuego medio.",
+      "Verter mezcla formando círculos.",
+      "Cocinar hasta que aparezcan burbujas, voltear.",
+      "Servir con miel o sirope."
+    ],
+    "mood": "Relajada",
+    "time": "20 min",
+    "difficulty": "Fácil",
+    "tags": ["desayuno", "dulce", "americano"],
+    "substitutions": {
+      "leche": "leche vegetal",
+      "mantequilla": "aceite de coco",
+      "harina": "harina integral o de avena"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Guacamole Casero",
+    "description": "La salsa mexicana fresca y cremosa que no puede faltar.",
+    "ingredients": [
+      "3 aguacates maduros",
+      "1 tomate",
+      "1 cebolla pequeña",
+      "Jugo de 1 limón",
+      "1 manojo de cilantro",
+      "Sal y pimienta",
+      "Chile al gusto"
+    ],
+    "steps": [
+      "Cortar los aguacates por la mitad y quitar el hueso.",
+      "Machacar la pulpa con un tenedor.",
+      "Picar finamente el tomate, cebolla y cilantro.",
+      "Mezclar todo con el jugo de limón.",
+      "Sazonar con sal, pimienta y chile.",
+      "Servir inmediatamente con totopos."
+    ],
+    "mood": "Con Prisa",
+    "time": "10 min",
+    "difficulty": "Fácil",
+    "tags": ["mexicana", "vegetariano", "fresco"],
+    "substitutions": {
+      "aguacate": " hummus para versión sin aguacate",
+      "cilantro": "perejil si no te gusta",
+      "chile": "pimienta de cayena o nada"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Lasaña de Berenjena",
+    "description": "Una versión ligera y deliciosa de la lasaña italiana tradicional.",
+    "ingredients": [
+      "2 berenjenas grandes",
+      "500g de carne molida",
+      "400g de tomate triturado",
+      "200g de queso mozzarella",
+      "50g de parmesano",
+      "1 cebolla",
+      "2 dientes de ajo",
+      "Aceite de oliva",
+      "Sal y pimienta"
+    ],
+    "steps": [
+      "Cortar las berenjenas en rodajas gruesas y salar.",
+      "Asar las berenjenas hasta que estén doradas.",
+      "Sofreír cebolla y ajo, añadir la carne.",
+      "Agregar el tomate triturado y cocinar 15 min.",
+      "En una bandeja, alternar capas: berenjena, carne, queso.",
+      "Terminar con queso y hornear 20 min a 180°C."
+    ],
+    "mood": "Anfitriona",
+    "time": "50 min",
+    "difficulty": "Media",
+    "tags": ["italiana", "berenjena", "familiar"],
+    "substitutions": {
+      "carne": "lentejas o proteína de soja",
+      "mozzarella": "queso vegano",
+      "parmesano": "levadura nutricional"
+    }
+  },
+  {
+    "id": 13,
+    "title": "Arroz Frito con Verduras",
+    "description": "Un plato rápido y satisfactorio que aprovecha las sobras.",
+    "ingredients": [
+      "400g de arroz cocido (de ayer)",
+      "2 huevos",
+      "1 zanahoria",
+      "100g de guisantes",
+      "3 cucharadas de salsa de soja",
+      "1 cucharadita de aceite de sésamo",
+      "Cebolla china",
+      "Aceite vegetal"
+    ],
+    "steps": [
+      "Batir los huevos y hacer una tortilla. Cortar en tiras.",
+      "Saltear las verduras picadas en wok muy caliente.",
+      "Añadir el arroz frío y remover rápidamente.",
+      "Agregar la soja y aceite de sésamo.",
+      "Incorporar los huevos en tiras.",
+      "Decorar con cebolla china."
+    ],
+    "mood": "Con Prisa",
+    "time": "15 min",
+    "difficulty": "Fácil",
+    "tags": ["asiática", "arroz", "sobras"],
+    "substitutions": {
+      "arroz": "cauliflower rice para versión baja en carb",
+      "guisantes": "maíz o brócoli",
+      "soja": "tamari o salsa de ostras"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Crema de Calabaza",
+    "description": "Una crema aterciopelada perfecta para los días frescos.",
+    "ingredients": [
+      "500g de calabaza",
+      "1 patata",
+      "1 cebolla",
+      "500ml de caldo de verduras",
+      "100ml de nata para cocinar",
+      "Nuez moscada",
+      "Aceite de oliva",
+      "Semillas de calabaza"
+    ],
+    "steps": [
+      "Pelar y cortar la calabaza y patata en dados.",
+      "Sofreír la cebolla hasta que esté transparente.",
+      "Añadir la calabaza y patata, rehogar 5 minutos.",
+      "Verter el caldo y cocinar 20 minutos.",
+      "Triturar con la batidora hasta que esté suave.",
+      "Añadir la nata y nuez moscada. Servir con semillas."
+    ],
+    "mood": "Relajada",
+    "time": "30 min",
+    "difficulty": "Fácil",
+    "tags": ["crema", "otoñal", "vegetariano"],
+    "substitutions": {
+      "nata": "coconut cream o leche evaporada",
+      "calabaza": "boniato o zapallo",
+      "caldo": "agua con concentrados"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Burrito Bowl",
+    "description": "Un bowl saludable cargado de sabor mexicano.",
+    "ingredients": [
+      "300g de arroz",
+      "1 lata de frijoles negros",
+      "200g de pollo o tofu",
+      "1 aguacate",
+      "Maíz",
+      "Salsa pico de gallo",
+      "Queso cheddar",
+      "Lima"
+    ],
+    "steps": [
+      "Cocinar el arroz según las instrucciones.",
+      "Calentar los frijoles con especias mexicanas.",
+      "Saltear el pollo con comino y pimentón.",
+      "Disponer el arroz como base en los bowls.",
+      "Añadir frijoles, pollo, aguacate, maíz y tomate.",
+      "Terminar con queso, salsa y jugo de lima."
+    ],
+    "mood": "Con Prisa",
+    "time": "25 min",
+    "difficulty": "Fácil",
+    "tags": ["mexicana", "saludable", "bowl"],
+    "substitutions": {
+      "pollo": "carne molida o jackfruit",
+      "queso": "queso vegano o sin queso",
+      "arroz": "cauliflower rice"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Milanesa Napolitana",
+    "description": "El clásico argentino: carne empanizada con salsa de tomate y queso.",
+    "ingredients": [
+      "4 bifes de ternera",
+      "2 huevos",
+      "Pan rallado",
+      "Harina",
+      "200g de mozzarella",
+      "400g de tomate triturado",
+      "Ajo",
+      "Aceite"
+    ],
+    "steps": [
+      "Pasar la carne por harina, huevo y pan rallado.",
+      "Freír en aceite caliente hasta dorar.",
+      "Para la salsa: sofreír ajo, añadir tomate.",
+      "Colocar las milanesas en bandeja para horno.",
+      "Cubrir con salsa y mozzarella.",
+      "Gratinar hasta que el queso se derrita."
+    ],
+    "mood": "Anfitriona",
+    "time": "40 min",
+    "difficulty": "Media",
+    "tags": ["argentina", "carne", "clásica"],
+    "substitutions": {
+      "ternera": "pollo o berenjena para vegetarians",
+      "mozzarella": "provolone o queso vegano",
+      "pan rallado": "panko o almendras molidas"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Pasta con Camarones",
+    "description": "Una combinación elegante de mariscos y pasta.",
+    "ingredients": [
+      "400g de espaguetis",
+      "300g de camarones",
+      "3 dientes de ajo",
+      "100ml de vino blanco",
+      "50g de mantequilla",
+      "Perejil fresco",
+      "Chile rojo",
+      "Limón"
+    ],
+    "steps": [
+      "Cocinar la pasta al dente.",
+      "Saltear los camarones con ajo hasta rosado.",
+      "Añadir el vino y reducir.",
+      "Incorporar la mantequilla y pasta.",
+      "Sazonar con chile y perejil.",
+      "Exprimir limón y servir."
+    ],
+    "mood": "Anfitriona",
+    "time": "25 min",
+    "difficulty": "Media",
+    "tags": ["mariscos", "italiana", "elegante"],
+    "substitutions": {
+      "camarones": "langostinos o tofu",
+      "vino blanco": "caldo con limón",
+      "espaguetis": "linguine o angel hair"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Tortilla Española",
+    "description": "La tortilla de patatas icónica de la cocina española.",
+    "ingredients": [
+      "4 huevos",
+      "3 patatas medianas",
+      "1 cebolla",
+      "Aceite de oliva",
+      "Sal"
+    ],
+    "steps": [
+      "Pelar y cortar las patatas en rodajas finas.",
+      "Freír las patatas y cebolla en aceite hasta blandas.",
+      "Batir los huevos con sal.",
+      "Mezclar las patatas con los huevos.",
+      "Verter en sartén con un poco de aceite.",
+      "Cocinar por ambos lados hasta dorar.",
+      "Desmoldar cuidadosamente."
+    ],
+    "mood": "Relajada",
+    "time": "30 min",
+    "difficulty": "Media",
+    "tags": ["española", "huevos", "típica"],
+    "substitutions": {
+      "patatas": "boniato o calabaza",
+      "cebolla": "cebolleta o puerro",
+      "aceite": "manteca para versión diferente"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Smoothie Verde Detox",
+    "description": "Un batido energético para empezar el día con buena mano.",
+    "ingredients": [
+      "1 plátano congelado",
+      "100g de espinacas",
+      "1 manzana",
+      "200ml de leche de almendras",
+      "1 colher de semillas de chía",
+      "Jengibre rallado",
+      "Miel al gusto"
+    ],
+    "steps": [
+      "Añadir la leche al vaso de la batidora.",
+      "Agregar las espinacas y el plátano.",
+      "Añadir la manzana a trozos y el jengibre.",
+      "Triturar todo hasta obtener una textura suave.",
+      "Añadir las semillas de chía y mezclar.",
+      "Endulzar con miel si es necesario."
+    ],
+    "mood": "Con Prisa",
+    "time": "5 min",
+    "difficulty": "Fácil",
+    "tags": ["bebida", "saludable", "desayuno"],
+    "substitutions": {
+      "plátano": "mango o papaya",
+      "leche de almendras": "coconut milk o avena",
+      "miel": "dátiles o agave"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Pollo al Curry",
+    "description": "Un plato aromático de la cocina india lleno de sabor.",
+    "ingredients": [
+      "500g de pechuga de pollo",
+      "400ml de leche de coco",
+      "3 cucharadas de curry en polvo",
+      "1 cebolla",
+      "2 dientes de ajo",
+      "Jengibre fresco",
+      "Arroz basmati",
+      "Cilantro fresco"
+    ],
+    "steps": [
+      "Cortar el pollo en dados y marinar con curry.",
+      "Sofreír la cebolla, ajo y jengibre.",
+      "Añadir el pollo y sellar.",
+      "Verter la leche de coco y cocinar 20 min.",
+      "Sazonar con más curry al gusto.",
+      "Servir sobre arroz basmati con cilantro."
+    ],
+    "mood": "Relajada",
+    "time": "35 min",
+    "difficulty": "Fácil",
+    "tags": ["india", "pollo", "coconut"],
+    "substitutions": {
+      "pollo": "garbanzos o cauliflower",
+      "leche de coco": "nata o yogur griego",
+      "arroz basmati": "arroz jazmín o quinoa"
+    }
+  },
+  {
+    "id": 21,
+    "title": "Pimientos de Padrón",
+    "description": "Los clásicos aperitivos gallegos salteados con sal gruesa.",
+    "ingredients": [
+      "300g de pimientos de Padrón",
+      "Aceite de oliva virgen",
+      "Sal gruesa marina"
+    ],
+    "steps": [
+      "Calentar aceite en una sartén a fuego alto.",
+      "Añadir los pimientos enteros.",
+      "Saltear girando constantemente.",
+      "Cuando empiecen a dorar y ampollarse, están listos.",
+      "Escurrir sobre papel.",
+      "Espolvorear con sal gruesa y servir inmediatamente."
+    ],
+    "mood": "Relajada",
+    "time": "10 min",
+    "difficulty": "Fácil",
+    "tags": ["española", "tapas", "vegetariano"],
+    "substitutions": {
+      "pimientos de Padrón": "pimientos verdes italiano",
+      "sal gruesa": "flor de sal"
+    }
+  },
+  {
+    "id": 22,
+    "title": "Ramen Casero",
+    "description": "Una taza reconfortante de ramen japonés auténtico.",
+    "ingredients": [
+      "300g de fideos ramen",
+      "1L de caldo de pollo o hueso",
+      "2 huevos",
+      "100g de cerdo cortado fino",
+      "Nori",
+      "Cebolleta",
+      "Salsa de soja",
+      "Mirin"
+    ],
+    "steps": [
+      "Preparar el caldo calentándolo con soja y mirin.",
+      "Cocinar los fideos según instrucciones.",
+      "Hacer huevos poche o fideos en agua 6-7 min.",
+      "Calentar el cerdo brevemente.",
+      "Disponer fideos en tazones hondos.",
+      "Verter el caldo caliente.",
+      "Decorar con huevo, cerdo, nori y cebolleta."
+    ],
+    "mood": "Relajada",
+    "time": "30 min",
+    "difficulty": "Media",
+    "tags": ["japonesa", "sopa", "noodles"],
+    "substitutions": {
+      "cerdo": "tofu o pollo",
+      "caldo de pollo": "caldo vegetal",
+      "fideos ramen": "espaguetis o fideos de arroz"
+    }
+  },
+  {
+    "id": 23,
+    "title": "Bruschetta Italiana",
+    "description": "Aperitivo italiano fresco y lleno de sabor mediterráneo.",
+    "ingredients": [
+      "1 baguette",
+      "4 tomates maduros",
+      "Albahaca fresca",
+      "2 dientes de ajo",
+      "Aceite de oliva virgen extra",
+      "Sal y pimienta",
+      "Vinagre balsámico"
+    ],
+    "steps": [
+      "Tostar las rodajas de baguette.",
+      "Rascar el ajo sobre el pan caliente.",
+      "Cortar los tomates en dados pequeños.",
+      "Mezclar con albahaca picada, aceite, sal y pimienta.",
+      "Colocar la mezcla sobre el pan.",
+      "Rociar con un hilo de balsámico."
+    ],
+    "mood": "Con Prisa",
+    "time": "15 min",
+    "difficulty": "Fácil",
+    "tags": ["italiana", "tapas", "vegetariano"],
+    "substitutions": {
+      "baguette": "pan ciabatta o focaccia",
+      "tomates": "tomates cherry",
+      "albahaca": "rucula o perejil"
+    }
+  },
+  {
+    "id": 24,
+    "title": "Pechuga de Pollo Rellena",
+    "description": "Un plato elegante con sorpresas en cada corte.",
+    "ingredients": [
+      "4 pechugas de pollo",
+      "200g de espinacas",
+      "100g de queso de cabra",
+      "50g de tomates secos",
+      "Ajo",
+      "Aceite de oliva",
+      "Sal y pimienta"
+    ],
+    "steps": [
+      "Hacer un bolsillo en cada pechuga.",
+      "Mezclar espinacas, queso y tomates picados.",
+      "Rellenar las pechugas con la mezcla.",
+      "Sellar con palillos.",
+      "Sellar en sartén y hornear 25 min a 180°C.",
+      "Dejar reposar antes de cortar."
+    ],
+    "mood": "Anfitriona",
+    "time": "40 min",
+    "difficulty": "Media",
+    "tags": ["pollo", "elegante", "queso"],
+    "substitutions": {
+      "queso de cabra": "mozzarella o queso vegano",
+      "tomates secos": "aceitunas o alcaparras",
+      "espinacas": "rucula o acelgas"
+    }
+  },
+  {
+    "id": 25,
+    "title": "Gazpacho Andaluz",
+    "description": "La sopa fría más refrescante del verano.",
+    "ingredients": [
+      "1kg de tomates maduros",
+      "1 pepino",
+      "1 pimiento verde",
+      "1 diente de ajo",
+      "100ml de aceite de oliva",
+      "50ml de vinagre",
+      "Pan duro",
+      "Sal"
+    ],
+    "steps": [
+      "Remojar el pan en agua.",
+      "Triturar los tomates, pepino, pimiento y ajo.",
+      "Escurrir el pan y añadir a la mezcla.",
+      "Agregar aceite y vinagre poco a poco.",
+      "Triturar todo hasta obtener una crema fina.",
+      "Enfriar en冰箱 al menos 2 horas.",
+      "Servir con picatostes y trozos de verduras."
+    ],
+    "mood": "Con Prisa",
+    "time": "15 min + frío",
+    "difficulty": "Fácil",
+    "tags": ["española", "sopa fría", "verano"],
+    "substitutions": {
+      "pan": "pan sin gluten o omitir",
+      "vinagre": "jugo de limón",
+      "tomates": "sandía para versión diferente"
+    }
+  },
+  {
+    "id": 26,
+    "title": "Poke Bowl Hawainano",
+    "description": "El bowl hawaiano de moda con pescado fresco.",
+    "ingredients": [
+      "300g de arroz de sushi",
+      "200g de atún o salmón fresco",
+      "1 aguacate",
+      "Edamame",
+      "Alga nori",
+      "Salsa de soja",
+      "Sésamo",
+      "Mango"
+    ],
+    "steps": [
+      "Cocinar el arroz de sushi y dejar enfriar.",
+      "Cortar el pescado en cubos.",
+      "Marinar el pescado con soja.",
+      "Disponer el arroz en bowls.",
+      "Añadir pescado, aguacate, mango y edamame.",
+      "Decorar con nori y sésamo.",
+      "Servir con soja extra."
+    ],
+    "mood": "Relajada",
+    "time": "20 min",
+    "difficulty": "Fácil",
+    "tags": ["hawaiana", "pescado", "saludable"],
+    "substitutions": {
+      "atún": "tofu o pollo para versión sin pescado",
+      "edamame": "frijoles negros",
+      "mango": "piña o papaya"
+    }
+  },
+  {
+    "id": 27,
+    "title": "Cordero al Romero",
+    "description": "Un clásico de la cocina mediterránea con hierbas aromáticas.",
+    "ingredients": [
+      "1kg de costillas de cordero",
+      "4 ramas de romero fresco",
+      "4 dientes de ajo",
+      "Aceite de oliva",
+      "Vino blanco",
+      "Sal y pimienta",
+      "Patatas"
+    ],
+    "steps": [
+      "Marinar el cordero con ajo, romero y aceite toda la noche.",
+      "Precalentar el horno a 220°C.",
+      "Sellar el cordero en sartén muy caliente.",
+      "Colocar en bandeja con patatas alrededor.",
+      "Hornear 20 min, bajar a 180°C, continuar 40 min.",
+      "Añadir vino al fondo de la bandeja.",
+      "Dejar reposar 10 minutos antes de servir."
+    ],
+    "mood": "Anfitriona",
+    "time": "1.5 horas",
+    "difficulty": "Alta",
+    "tags": ["cordero", "mediterránea", "domingo"],
+    "substitutions": {
+      "cordero": "cabrito o pato",
+      "romero": "tomillo o lavanda",
+      "vino blanco": "caldo con hierbas"
+    }
+  },
+  {
+    "id": 28,
+    "title": "Pizza Margarita",
+    "description": "La pizza italiana básica pero perfecta en su simplicidad.",
+    "ingredients": [
+      "300g de harina",
+      "200ml de agua tibia",
+      "10g de levadura fresca",
+      "1 cucharadita de sal",
+      "200g de tomate triturado",
+      "200g de mozzarella fresca",
+      "Albahaca fresca",
+      "Aceite de oliva"
+    ],
+    "steps": [
+      "Disolver la levadura en agua tibia.",
+      "Mezclar con harina y sal, amasar 10 minutos.",
+      "Dejar reposar 1 hora cubierta.",
+      "Extender la masa y colocar sobre piedra.",
+      "Cubrir con tomate, mozzarella y aceite.",
+      "Hornear a 250°C 10-12 minutos.",
+      "Decorar con albahaca fresca al salir."
+    ],
+    "mood": "Relajada",
+    "time": "1.5 horas",
+    "difficulty": "Media",
+    "tags": ["italiana", "pizza", "familiar"],
+    "substitutions": {
+      "mozzarella": "mozzarella vegana o ricotta",
+      "harina": "harina integral o sin gluten",
+      "tomate triturado": "salsa de tomate casera"
+    }
+  },
+  {
+    "id": 29,
+    "title": "Salmón con Menta y Yogur",
+    "description": "Una combinación fresca y healthy para una cena ligera.",
+    "ingredients": [
+      "2 filetes de salmón",
+      "200g de yogur griego",
+      "Hojas de menta fresca",
+      "1 pepino",
+      "Limón",
+      "Ajo",
+      "Aceite de oliva",
+      "Sal y pimienta"
+    ],
+    "steps": [
+      "Mezclar yogur con menta picada, ajo y limón.",
+      "Sazonar el salmón con sal y pimienta.",
+      "asar o freír el salmón 4 min por lado.",
+      "Rallar pepino y mezclar con el yogur.",
+      "Servir el salmón sobre la salsa de yogur.",
+      "Decorar con rodajas de limón."
+    ],
+    "mood": "Con Prisa",
+    "time": "20 min",
+    "difficulty": "Fácil",
+    "tags": ["saludable", "salmón", "griega"],
+    "substitutions": {
+      "salmón": "trucha o bacalao",
+      "yogur griego": "yogur de coco",
+      "menta": "eneldo o hierbabuena"
+    }
+  },
+  {
+    "id": 30,
+    "title": "Croquetas de Jamón",
+    "description": "Las croquetas caseras cremosas que todos adoran.",
+    "ingredients": [
+      "100g de jamón serrano picado",
+      "50g de mantequilla",
+      "50g de harina",
+      "500ml de leche",
+      "2 huevos",
+      "Pan rallado",
+      "Nuez moscada",
+      "Sal y pimienta"
+    ],
+    "steps": [
+      "Derretir mantequilla y cocinar la harina.",
+      "Añadir la leche poco a poco removiendo.",
+      "Agregar el jamón y sazonar con nuez moscada.",
+      "Cocinar hasta obtener una masa cremosa.",
+      "Enfriar, formar croquetas, pasar por huevo y pan.",
+      "Freír en aceite abundante hasta dorar."
+    ],
+    "mood": "Anfitriona",
+    "time": "45 min + frío",
+    "difficulty": "Media",
+    "tags": ["española", "tapas", "familiar"],
+    "substitutions": {
+      "jamón": "chorizo, atún o setas",
+      "leche": "leche vegetal",
+      "pan rallado": "panko"
+    }
+  },
+  {
+    "id": 31,
+    "title": "Porridge de Avena",
+    "description": "El desayuno cálido y nutritivo perfecto para invierno.",
+    "ingredients": [
+      "100g de avena",
+      "300ml de leche",
+      "1 plátano",
+      "Canela",
+      "Miel o azúcar moreno",
+      "Frutos rojos",
+      "Nueces"
+    ],
+    "steps": [
+      "Calentar la leche a fuego medio.",
+      "Añadir la avena y cocinar 5 minutos revolviendo.",
+      "Agregar canela al gusto.",
+      "Verter en un tazón.",
+      "Decorar con plátano, frutos rojos y nueces.",
+      "Rociar con miel."
+    ],
+    "mood": "Relajada",
+    "time": "10 min",
+    "difficulty": "Fácil",
+    "tags": ["desayuno", "saludable", "avena"],
+    "substitutions": {
+      "leche": "leche vegetal o agua",
+      "miel": "maple syrup o dátiles",
+      "frutos rojos": "arándanos o fresas"
+    }
+  },
+  {
+    "id": 32,
+    "title": "Paella Valenciana",
+    "description": "El plato español por excelencia lleno de sabor.",
+    "ingredients": [
+      "300g de arroz bomba",
+      "300g de pollo",
+      "200g de conejo",
+      "100g de judías verdes",
+      "50g de garrofón",
+      "500ml de caldo de pollo",
+      "Azafrán",
+      "Aceite de oliva",
+      "Sal y pimentón"
+    ],
+    "steps": [
+      "Sofreír el pollo y conejo en aceite hasta dorar.",
+      "Añadir las verduras y rehogar.",
+      "Agregar el pimentón y el caldo caliente.",
+      "Añadir el azafrán y cocinar 10 minutos.",
+      "Incorporar el arroz y distribuir均匀mente.",
+      "Cocinar a fuego medio 20 minutos sin mover.",
+      "Dejar reposar 5 minutos antes de servir."
+    ],
+    "mood": "Anfitriona",
+    "time": "1 hora",
+    "difficulty": "Alta",
+    "tags": ["española", "arroz", "domingo"],
+    "substitutions": {
+      "pollo": "más conejo o solo pollo",
+      "garrofón": "alubias blancas o judías",
+      "arroz bomba": "arroz calasparra"
+    }
+  },
+  {
+    "id": 33,
+    "title": "Ensalada de Quinoa",
+    "description": "Una ensalada proteica y llena de nutrientes.",
+    "ingredients": [
+      "200g de quinoa",
+      "1 pepino",
+      "200g de tomates cherry",
+      "100g de feta",
+      "50g de aceitunas",
+      "Cebolla roja",
+      "Zumo de limón",
+      "Aceite de oliva",
+      "Hierbas frescas"
+    ],
+    "steps": [
+      "Cocinar la quinoa según instrucciones y enfriar.",
+      "Cortar pepino, tomates y cebolla en dados.",
+      "Mezclar la quinoa con las verduras.",
+      "Añadir feta desmenuzado y aceitunas.",
+      "Aliñar con limón y aceite.",
+      "Decorar con hierbas frescas."
+    ],
+    "mood": "Con Prisa",
+    "time": "20 min",
+    "difficulty": "Fácil",
+    "tags": ["ensalada", "saludable", "vegetariano"],
+    "substitutions": {
+      "quinoa": "bulgur, arroz o cuscús",
+      "feta": "queso de cabra o tofu",
+      "aceitunas": "alcaparras"
+    }
+  },
+  {
+    "id": 34,
+    "title": "Ratatouille Francés",
+    "description": "La versión gourmet de la clásica verduras provençales.",
+    "ingredients": [
+      "1 calabacín",
+      "1 berenjena",
+      "3 tomates",
+      "1 pimiento rojo",
+      "400g de tomate triturado",
+      "Ajo",
+      "Aceite de oliva",
+      "Hierbas de Provenza",
+      "Queso parmesano"
+    ],
+    "steps": [
+      "Cortar calabacín, berenjena, tomates y pimiento en rodajas finas.",
+      "Preparar salsa base con tomate triturado y ajo.",
+      "Verter la salsa en el fondo de una bandeja.",
+      "Alternar las verduras en filas sobre la salsa.",
+      "Rociar con aceite, hierbas y parmesano.",
+      "Hornear 45 min a 180°C."
+    ],
+    "mood": "Relajada",
+    "time": "1 hora",
+    "difficulty": "Media",
+    "tags": ["francesa", "vegetariano", "verduras"],
+    "substitutions": {
+      "calabacín": "courgette amarilla",
+      "queso parmesano": "levadura nutricional",
+      "hierbas de Provenza": "romero, tomillo y albahaca"
+    }
+  },
+  {
+    "id": 35,
+    "title": "Tarta de Manzana",
+    "description": "El postre clásico que nunca pasa de moda.",
+    "ingredients": [
+      "200g de harina",
+      "100g de mantequilla fría",
+      "1 huevo",
+      "50g de azúcar",
+      "4 manzanas golden",
+      "50g de mantequilla",
+      "50g de azúcar glass",
+      "Canela",
+      "Jugo de limón"
+    ],
+    "steps": [
+      "Preparar masa con harina, mantequilla, huevo y azúcar.",
+      "Refrigerar 30 minutos.",
+      "Pelar y cortar las manzanas en laminas.",
+      "Rociar manzanas con limón y canela.",
+      "Forrar molde con masa y填充ar con manzanas.",
+      "Cubrir con otra capa de masa y cerrar.",
+      "Hornear 35-40 min a 180°C.",
+      "Espolvorear con azúcar glass al servir."
+    ],
+    "mood": "Relajada",
+    "time": "1.5 horas",
+    "difficulty": "Media",
+    "tags": ["postre", "manzana", "clásica"],
+    "substitutions": {
+      "manzanas": "peras o mezcla de frutas",
+      "mantequilla": "margarina vegana",
+      "harina": "almendra molida para versión sin gluten"
+    }
+  },
+  {
+    "id": 36,
+    "title": "Fajitas de Pollo",
+    "description": "Tortillas suaves rellenas de pollo y vegetales salteados.",
+    "ingredients": [
+      "400g de pechuga de pollo",
+      "2 pimientos (rojo y verde)",
+      "1 cebolla grande",
+      "8 tortillas de harina",
+      "100g de queso cheddar",
+      "Salsa brava",
+      "Nata agria",
+      "Especias mexicanas"
+    ],
+    "steps": [
+      "Cortar el pollo en tiras y marinar con especias.",
+      "Cortar los pimientos y cebolla en juliana.",
+      "Saltear el pollo a fuego alto hasta cocinar.",
+      "En la misma sartén, saltear las verduras.",
+      "Calentar las tortillas.",
+      "Rellenar con pollo, verduras, queso y salsas."
+    ],
+    "mood": "Con Prisa",
+    "time": "20 min",
+    "difficulty": "Fácil",
+    "tags": ["mexicana", "pollo", "rápido"],
+    "substitutions": {
+      "pollo": "carne, camarones o tofu",
+      "queso cheddar": "queso vegano o Monterey Jack",
+      "tortillas de harina": "tortillas de maíz o lettuce wraps"
+    }
+  },
+  {
+    "id": 37,
+    "title": "Mousse de Chocolate",
+    "description": "Un postre aerado y decadente para los amantes del chocolate.",
+    "ingredients": [
+      "200g de chocolate negro (70%)",
+      "4 huevos",
+      "50g de azúcar",
+      "200ml de nata para montar",
+      "1 pizca de sal"
+    ],
+    "steps": [
+      "Fundir el chocolate al baño María.",
+      "Separar claras y yemas.",
+      "Montar las claras con una pizca de sal.",
+      "Montar la nata.",
+      "Mezclar las yemas con el chocolate tibio.",
+      "Incorporar las claras con movimientos suaves.",
+      "Añadir la nata y mezclar suavemente.",
+      "Enfriar mínimo 4 horas."
+    ],
+    "mood": "Anfitriona",
+    "time": "30 min + frío",
+    "difficulty": "Media",
+    "tags": ["postre", "chocolate", "elegante"],
+    "substitutions": {
+      "chocolate": "chocolate vegano",
+      "huevos": "agar-agar para versión vegana",
+      "nata": "nata de coco"
+    }
+  },
+  {
+    "id": 38,
+    "title": "Falafel Casero",
+    "description": "Las croquetas de garbanzo fritas de la cocina libanesa.",
+    "ingredients": [
+      "400g de garbanzos cocidos",
+      "1 cebolla",
+      "3 dientes de ajo",
+      "Perejil fresco",
+      "Comino",
+      "Pimentón",
+      "Harina de garbanzo",
+      "Aceite para freír"
+    ],
+    "steps": [
+      "Triturar los garbanzos con cebolla, ajo y perejil.",
+      "Añadir especias y suficiente harina.",
+      "Formar bolitas con las manos húmedas.",
+      "Freír en aceite caliente hasta dorar.",
+      "Escurrir sobre papel.",
+      "Servir en pita con hummus y ensalada."
+    ],
+    "mood": "Relajada",
+    "time": "40 min",
+    "difficulty": "Media",
+    "tags": ["libanesa", "vegetariano", "garbanzos"],
+    "substitutions": {
+      "garbanzos": "habas o lentejas",
+      "freír": "hornear a 200°C",
+      "harina": "pan rallado"
+    }
+  },
+  {
+    "id": 39,
+    "title": "Albóndigas en Salsa",
+    "description": "Albóndigas tiernas en salsa de tomate casera.",
+    "ingredients": [
+      "500g de carne molida",
+      "1 huevo",
+      "50g de pan rallado",
+      "Leche",
+      "1 cebolla",
+      "400g de tomate triturado",
+      "Ajo",
+      "Hierbas italianas",
+      "Queso parmesano"
+    ],
+    "steps": [
+      "Mezclar carne con huevo, pan remojado en leche, sal y parmesano.",
+      "Formar albóndigas y dorar en aceite.",
+      "Sofreír cebolla y ajo, añadir tomate y hierbas.",
+      "Añadir las albóndigas a la salsa.",
+      "Cocinar a fuego bajo 20 minutos.",
+      "Servir con pasta o arroz."
+    ],
+    "mood": "Relajada",
+    "time": "40 min",
+    "difficulty": "Fácil",
+    "tags": ["italiana", "carne", "familiar"],
+    "substitutions": {
+      "carne": "mezcla con tofu o solo verduras",
+      "pan rallado": "avena o breadcrumbs sin gluten",
+      "queso": "levadura nutricional"
+    }
+  },
+  {
+    "id": 40,
+    "title": "Tempura de Verduras",
+    "description": "Verduras crujientes con la masa japonesa ligera.",
+    "ingredients": [
+      "1 calabacín",
+      "1 batata",
+      "1 pimiento",
+      "Champiñones",
+      "200ml de agua helada",
+      "150g de harina",
+      "1 huevo",
+      "Aceite para freír",
+      "Salsa tentsuyu"
+    ],
+    "steps": [
+      "Mezclar harina, huevo y agua helada sin sobremezclar.",
+      "Cortar las verduras en trozos apropiados.",
+      "Calentar aceite a 180°C.",
+      "Pasar verduras por la masa y freír.",
+      "Sacar cuando estén doradas y crujientes.",
+      "Escurrir sobre rejilla.",
+      "Servir con salsa tentsuyu o simplemente sal."
+    ],
+    "mood": "Anfitriona",
+    "time": "30 min",
+    "difficulty": "Media",
+    "tags": ["japonesa", "frito", "verduras"],
+    "substitutions": {
+      "harina": "harina de arroz o maicena",
+      "agua helada": "agua con gas",
+      "verduras": "camarones o tofu"
+    }
+  },
+  {
+    "id": 41,
+    "title": "Avena Nocturna (Overnight Oats)",
+    "description": "Desayuno prepping que estará listo cuando despiertes.",
+    "ingredients": [
+      "100g de avena",
+      "250ml de leche",
+      "1 cucharada de chia",
+      "1 cucharada de miel",
+      "Frutas frescas",
+      "Nuez moscada",
+      "Canela"
+    ],
+    "steps": [
+      "La noche anterior, mezclar avena, leche, chia y especias.",
+      "Añadir miel y mezclar bien.",
+      "Cubrir y refrigerar toda la noche.",
+      "Por la mañana, remover y añadir más leche si quieres.",
+      "Decorar con frutas frescas.",
+      "Opcional: añadir mantequilla de maní o coco."
+    ],
+    "mood": "Con Prisa",
+    "time": "5 min (la noche anterior)",
+    "difficulty": "Fácil",
+    "tags": ["desayuno", "meal prep", "saludable"],
+    "substitutions": {
+      "leche": "yogur, leche de coco o杏仁",
+      "miel": "maple syrup o agave",
+      "frutas": "las que prefieras"
+    }
+  },
+  {
+    "id": 42,
+    "title": "Salmón Teriyaki",
+    "description": "El clásico japonés con glaseado brillante y sabor intenso.",
+    "ingredients": [
+      "4 filetes de salmón",
+      "100ml de salsa de soja",
+      "50ml de mirin",
+      "50ml de sake o vino de arroz",
+      "2 cucharadas de azúcar",
+      "Jengibre rallado",
+      "Semillas de sésamo",
+      "Cebolleta"
+    ],
+    "steps": [
+      "Preparar la salsa teriyaki: hervir soja, mirin, sake y azúcar.",
+      "Dejar reducir hasta obtener un glaseado.",
+      "Sellar el salmón en sartén.",
+      "Añadir la salsa y cocinar 5 minutos más.",
+      "Bañar el salmón con la salsa repetidamente.",
+      "Decorar con sésamo y cebolleta.",
+      "Servir con arroz."
+    ],
+    "mood": "Anfitriona",
+    "time": "25 min",
+    "difficulty": "Media",
+    "tags": ["japonesa", "salmón", "glaseado"],
+    "substitutions": {
+      "salmón": "tofu, pollo o aubergine",
+      "sake": "vino blanco o más mirin",
+      "mirin": "vino de arroz o media sidra"
+    }
+  },
+  {
+    "id": 43,
+    "title": "Pudin de Choclo",
+    "description": "El postre latinoamericano cremoso y reconfortante.",
+    "ingredients": [
+      "4 mazorcas de choclo",
+      "200g de azúcar",
+      "3 huevos",
+      "500ml de leche",
+      "50g de mantequilla",
+      "1 cucharadita de vainilla",
+      "Canela"
+    ],
+    "steps": [
+      "Rallar o triturar el choclo.",
+      "Mezclar con huevos, azúcar, leche y vainilla.",
+      "Verter en moldes acaramelados.",
+      "Hornear a baño María 45 min a 180°C.",
+      "Dejar enfriar completamente.",
+      "Refrigerar mínimo 4 horas.",
+      "Desmoldar y servir con canela."
+    ],
+    "mood": "Relajada",
+    "time": "1 hora + frío",
+    "difficulty": "Media",
+    "tags": ["latina", "postre", "choclo"],
+    "substitutions": {
+      "choclo": "maíz dulce enlatado",
+      "leche": "leche de coco",
+      "azúcar": "azúcar moreno o panela"
+    }
+  },
+  {
+    "id": 44,
+    "title": "Pescado Frito Estilo Cantonés",
+    "description": "Crujiente por fuera, tierno por dentro con la técnica del wok.",
+    "ingredients": [
+      "1 pescado entero (bass o pargo)",
+      "Jengibre",
+      "Cebolleta",
+      "Salsa de soja",
+      "Aceite de sésamo",
+      "Maicena",
+      "Sal y pimienta",
+      "Arroz"
+    ],
+    "steps": [
+      "Limpiar y secar muy bien el pescado.",
+      "Salpimentar y Pasar por maicena.",
+      "Freír en aceite muy caliente hasta crujiente.",
+      "Escurrir sobre rejilla.",
+      "En wok, saltar jengibre y cebolleta.",
+      "Verter salsa de soja y aceite de sésamo.",
+      "Verter sobre el pescado y servir con arroz."
+    ],
+    "mood": "Anfitriona",
+    "time": "30 min",
+    "difficulty": "Media",
+    "tags": ["china", "pescado", "crujiente"],
+    "substitutions": {
+      "pescado entero": "filetes de cualquier pescado blanco",
+      "aceite de sésamo": "aceite de cacahuete",
+      "maicena": "harina de trigo"
+    }
+  },
+  {
+    "id": 45,
+    "title": "Sopa de Miso",
+    "description": "La sopa japonesa reconfortante que acompaña cualquier comida.",
+    "ingredients": [
+      "1L de dashi (caldo de algas)",
+      "3 cucharadas de pasta de miso",
+      "100g de tofu",
+      "Cebolleta",
+      "Algas wakame",
+      "Setas shiitake"
+    ],
+    "steps": [
+      "Preparar el dashi según instrucciones.",
+      "Hidratar las algas wakame.",
+      "Calentar el dashi a fuego bajo (no hervir).",
+      "Añadir el tofu en dados y las setas.",
+      "Retirar del fuego y disolver el miso.",
+      "Nunca hervir después de añadir el miso.",
+      "Servir con cebolleta picada."
+    ],
+    "mood": "Con Prisa",
+    "time": "10 min",
+    "difficulty": "Fácil",
+    "tags": ["japonesa", "sopa", "ligera"],
+    "substitutions": {
+      "tofu": "tofu silken o skip",
+      "dashi": "caldo vegetal",
+      "setas": "cualquier verdura suave"
+    }
+  },
+  {
+    "id": 46,
+    "title": "Tarta de Queso Sin Horno",
+    "description": "Una tarta fría rápida y cremosa sin complicaciones.",
+    "ingredients": [
+      "200g de galletas digestive",
+      "80g de mantequilla",
+      "500g de queso crema",
+      "200ml de nata para montar",
+      "100g de azúcar",
+      "200g de frutos rojos",
+      "Jugo de medio limón",
+      "Gelatina"
+    ],
+    "steps": [
+      "Triturar galletas y mezclar con mantequilla derretida.",
+      "Press into springform pan and refrigerate.",
+      "Montar la nata.",
+      "Mezclar queso crema con azúcar y limón.",
+      "Incorporar la nata y la gelatina preparada.",
+      "Verter sobre la base y refrigerar 4 horas.",
+      "Decorar con frutos rojos."
+    ],
+    "mood": "Relajada",
+    "time": "20 min + frío",
+    "difficulty": "Fácil",
+    "tags": ["postre", "queso", "sin horno"],
+    "substitutions": {
+      "galletas": "galletas sin gluten o arroz crisp",
+      "queso crema": "yogur griego o queso mascarpone",
+      "gelatina": "agar-agar para versión vegana"
+    }
+  },
+  {
+    "id": 47,
+    "title": "Curry de Garbanzos",
+    "description": "Un curry vegetariano espeso y lleno de especias.",
+    "ingredients": [
+      "400g de garbanzos cocidos",
+      "400ml de leche de coco",
+      "400g de tomate triturado",
+      "1 cebolla",
+      "3 dientes de ajo",
+      "Jengibre fresco",
+      "Curry en polvo",
+      "Espinacas",
+      "Arroz basmati"
+    ],
+    "steps": [
+      "Sofreír cebolla, ajo y jengibre.",
+      "Añadir curry y cocinar 1 minuto.",
+      "Verter tomate y cocinar 5 minutos.",
+      "Añadir garbanzos y leche de coco.",
+      "Cocinar 15 minutos hasta espesar.",
+      "Añadir espinacas al final.",
+      "Servir con arroz basmati."
+    ],
+    "mood": "Relajada",
+    "time": "30 min",
+    "difficulty": "Fácil",
+    "tags": ["vegetariano", "india", "curry"],
+    "substitutions": {
+      "garbanzos": "lentejas o potatoes",
+      "leche de coco": "nata o leche evaporated",
+      "espinacas": "kale o col rizada"
+    }
+  },
+  {
+    "id": 48,
+    "title": "Bagel con Huevo y Tocino",
+    "description": "El desayuno americano completo y satisfactorio.",
+    "ingredients": [
+      "2 bagels",
+      "4 huevos",
+      "4 rebanadas de tocino",
+      "Queso cheddar",
+      "Mantequilla",
+      "Sal y pimienta"
+    ],
+    "steps": [
+      "Tostar los bagels.",
+      "Freír el tocino hasta crujiente.",
+      "Freír o escalfar los huevos.",
+      "Untar los bagels con mantequilla.",
+      "Colocar tocino, huevo y queso.",
+      "Cerrar y servir inmediatamente."
+    ],
+    "mood": "Con Prisa",
+    "time": "15 min",
+    "difficulty": "Fácil",
+    "tags": ["desayuno", "americano", "bagel"],
+    "substitutions": {
+      "tocino": "tocino de pavo o aguacate",
+      "queso": "queso crema o none",
+      "bagels": "pan de hamburguesa o english muffin"
+    }
+  },
+  {
+    "id": 49,
+    "title": "Pisto Manchego",
+    "description": "El clásico platos de verduras españolas para acompañar.",
+    "ingredients": [
+      "2 calabacines",
+      "2 berenjenas",
+      "4 tomates maduros",
+      "1 pimiento verde",
+      "1 cebolla",
+      "Ajo",
+      "Aceite de oliva",
+      "Sal y pimienta"
+    ],
+    "steps": [
+      "Picar todas las verduras en dados pequeños.",
+      "Sofreír cebolla y ajo en aceite.",
+      "Añadir pimiento y cocinar 5 minutos.",
+      "Incorporar calabacín y berenjena.",
+      "Añadir tomate y sazonar.",
+      "Cocinar a fuego medio 25 minutos.",
+      "Servir caliente o frío como guarnición."
+    ],
+    "mood": "Con Prisa",
+    "time": "35 min",
+    "difficulty": "Fácil",
+    "tags": ["española", "verduras", "guarnición"],
+    "substitutions": {
+      "calabacín": "zucchini amarillo",
+      "berenjena": "más calabacín",
+      "tomates": "tomate triturado en lata"
+    }
+  },
+  {
+    "id": 50,
+    "title": "Mochi de Helado",
+    "description": "Los pequeños pasteles de arroz japoneses con corazón de helado.",
+    "ingredients": [
+      "200g de harina de arroz glutinoso",
+      "60g de azúcar",
+      "120ml de agua",
+      "Colorante alimentario",
+      "Helado de tu elección",
+      "Maicena para polvo"
+    ],
+    "steps": [
+      "Mezclar harina, azúcar y agua hasta suave.",
+      "Cocinar al microondas 1 minuto, remover.",
+      "Repetir 2-3 veces hasta obtener masa elástica.",
+      "Dividir y añadir colorante si deseas.",
+      "Tomar bolas de helado muy firme.",
+      "Envolver cada bola con masa de mochi.",
+      "Congelar hasta el momento de servir."
+    ],
+    "mood": "Anfitriona",
+    "time": "30 min + congelar",
+    "difficulty": "Alta",
+    "tags": ["japonesa", "postre", "helado"],
+    "substitutions": {
+      "harina de arroz": "harina de arroz normal",
+      "helado": "sorbete para versión dairy-free",
+      "colorante": "polvo de matcha o cocoa"
+    }
+  }
+]
