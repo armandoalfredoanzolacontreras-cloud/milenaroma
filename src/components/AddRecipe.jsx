@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { X, Plus, Youtube, FileText, Link, Check, Loader, Wand2, Clipboard, Copy, Search, Sparkles } from 'lucide-react';
 
@@ -814,22 +813,28 @@ Pasos:
               <div style={{ 
                 backgroundColor: 'rgba(233, 237, 198, 0.3)', 
                 borderRadius: '12px', 
-                padding: '0.75rem',
+                padding: '0.5rem',
                 maxHeight: '300px',
                 overflowY: 'auto'
               }}>
                 {formData.ingredients.map((ing, index) => (
                   <div key={index} style={{ 
-                    padding: '1rem', 
+                    padding: '0.875rem 1rem', 
                     backgroundColor: 'white', 
                     borderRadius: '8px', 
-                    marginBottom: '0.5rem',
+                    marginBottom: '0.375rem',
                     display: 'flex', 
                     alignItems: 'center',
                     fontSize: '1rem',
-                    lineHeight: 1.6
+                    lineHeight: 1.5,
+                    border: '1px solid #e8e8e8'
                   }}>
-                    <span style={{ flex: 1, color: '#2c3e50', fontWeight: 400 }}>
+                    <span style={{ 
+                      flex: 1, 
+                      color: '#1a1a1a', 
+                      fontWeight: 500,
+                      letterSpacing: '0.01em'
+                    }}>
                       {ing}
                     </span>
                     <button 
@@ -839,7 +844,7 @@ Pasos:
                         background: 'none', 
                         border: 'none', 
                         cursor: 'pointer', 
-                        color: '#bdc3c7', 
+                        color: '#999', 
                         padding: '0.25rem 0.5rem', 
                         fontSize: '1.25rem', 
                         lineHeight: 1,
@@ -882,7 +887,7 @@ Pasos:
               <div style={{ 
                 backgroundColor: 'rgba(233, 237, 198, 0.3)', 
                 borderRadius: '12px', 
-                padding: '0.75rem',
+                padding: '0.5rem',
                 maxHeight: '350px',
                 overflowY: 'auto'
               }}>
@@ -891,12 +896,13 @@ Pasos:
                     padding: '1rem', 
                     backgroundColor: 'white', 
                     borderRadius: '8px', 
-                    marginBottom: '0.5rem',
+                    marginBottom: '0.375rem',
                     display: 'flex', 
                     gap: '1rem',
                     alignItems: 'flex-start',
                     fontSize: '1rem',
-                    lineHeight: 1.7
+                    lineHeight: 1.6,
+                    border: '1px solid #e8e8e8'
                   }}>
                     <span style={{ 
                       backgroundColor: '#3d6b4f', 
@@ -911,7 +917,7 @@ Pasos:
                       fontWeight: 600,
                       flexShrink: 0
                     }}>{index + 1}</span>
-                    <span style={{ flex: 1, wordBreak: 'break-word', color: '#2c3e50' }}>{step}</span>
+                    <span style={{ flex: 1, wordBreak: 'break-word', color: '#1a1a1a', fontWeight: 400 }}>{step}</span>
                     <button 
                       onClick={() => removeStep(index)}
                       title="Eliminar"
@@ -919,7 +925,7 @@ Pasos:
                         background: 'none', 
                         border: 'none', 
                         cursor: 'pointer', 
-                        color: '#bdc3c7', 
+                        color: '#999', 
                         padding: '0.25rem 0.5rem', 
                         fontSize: '1.25rem', 
                         lineHeight: 1,
