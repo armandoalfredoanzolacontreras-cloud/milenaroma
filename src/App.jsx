@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
 import { AuthProvider, useAuth } from './context/AuthContext'
@@ -21,7 +22,14 @@ import CategoryPage from './pages/CategoryPage'
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth()
 
-  if (loading) {
+  const [showLoader, setShowLoader] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowLoader(false), 3000)
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (loading && showLoader) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="animate-spin w-8 h-8 border-4 border-[var(--primary)] border-t-transparent rounded-full" />
