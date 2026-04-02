@@ -73,7 +73,7 @@ export default function CreateRecipe() {
     setContent(prev => prev + text)
   }
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (!title.trim()) {
       alert('Por favor ingresa un título para la receta')
       return
@@ -91,8 +91,14 @@ export default function CreateRecipe() {
       difficulty: 'Fácil'
     }
 
-    addRecipe(recipe)
+    const { data, error } = await addRecipe(recipe)
     setSaving(false)
+
+    if (error) {
+      alert('Error al guardar: ' + error.message)
+      return
+    }
+
     navigate('/')
   }
 
