@@ -819,21 +819,21 @@ Pasos:
               }}>
                 {formData.ingredients.map((ing, index) => (
                   <div key={index} style={{ 
-                    padding: '0.875rem 1rem', 
+                    padding: '0.875rem 1.25rem', 
                     backgroundColor: 'white', 
                     borderRadius: '8px', 
                     marginBottom: '0.375rem',
-                    display: 'flex', 
-                    alignItems: 'center',
                     fontSize: '1rem',
                     lineHeight: 1.5,
-                    border: '1px solid #e8e8e8'
+                    border: '1px solid #e8e8e8',
+                    position: 'relative'
                   }}>
                     <span style={{ 
-                      flex: 1, 
                       color: '#1a1a1a', 
                       fontWeight: 500,
-                      letterSpacing: '0.01em'
+                      wordBreak: 'break-word',
+                      display: 'block',
+                      paddingRight: '2rem'
                     }}>
                       {ing}
                     </span>
@@ -841,15 +841,17 @@ Pasos:
                       onClick={() => removeIngredient(index)} 
                       title="Eliminar"
                       style={{ 
+                        position: 'absolute',
+                        right: '0.5rem',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
                         background: 'none', 
                         border: 'none', 
                         cursor: 'pointer', 
-                        color: '#999', 
-                        padding: '0.25rem 0.5rem', 
+                        color: '#bbb', 
+                        padding: '0.5rem', 
                         fontSize: '1.25rem', 
-                        lineHeight: 1,
-                        flexShrink: 0,
-                        marginLeft: '0.5rem'
+                        lineHeight: 1
                       }}
                     >×</button>
                   </div>
@@ -893,7 +895,7 @@ Pasos:
               }}>
                 {formData.steps.map((step, index) => (
                   <div key={index} style={{ 
-                    padding: '1rem', 
+                    padding: '1rem 1.25rem', 
                     backgroundColor: 'white', 
                     borderRadius: '8px', 
                     marginBottom: '0.375rem',
@@ -902,18 +904,20 @@ Pasos:
                     alignItems: 'flex-start',
                     fontSize: '1rem',
                     lineHeight: 1.6,
-                    border: '1px solid #e8e8e8'
+                    border: '1px solid #e8e8e8',
+                    position: 'relative'
                   }}>
                     <span style={{ 
                       backgroundColor: '#3d6b4f', 
                       color: 'white', 
-                      minWidth: '32px', 
-                      height: '32px', 
+                      minWidth: '28px', 
+                      width: '28px',
+                      height: '28px', 
                       borderRadius: '50%', 
                       display: 'flex', 
                       alignItems: 'center', 
                       justifyContent: 'center',
-                      fontSize: '0.9rem',
+                      fontSize: '0.85rem',
                       fontWeight: 600,
                       flexShrink: 0
                     }}>{index + 1}</span>
@@ -922,14 +926,16 @@ Pasos:
                       onClick={() => removeStep(index)}
                       title="Eliminar"
                       style={{ 
+                        position: 'absolute',
+                        right: '0.5rem',
+                        top: '0.75rem',
                         background: 'none', 
                         border: 'none', 
                         cursor: 'pointer', 
-                        color: '#999', 
-                        padding: '0.25rem 0.5rem', 
+                        color: '#bbb', 
+                        padding: '0.5rem', 
                         fontSize: '1.25rem', 
-                        lineHeight: 1,
-                        flexShrink: 0
+                        lineHeight: 1
                       }}
                     >×</button>
                   </div>
