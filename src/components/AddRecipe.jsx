@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { X, Plus, Youtube, FileText, Link, Check, Loader, Wand2, Clipboard, Copy, Search, Sparkles } from 'lucide-react';
+import { X, Plus, Youtube, FileText, Link, Check } from 'lucide-react';
 
 const AddRecipe = ({ onClose, onSave }) => {
   const [mode, setMode] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -21,7 +20,6 @@ const AddRecipe = ({ onClose, onSave }) => {
   const [currentIngredient, setCurrentIngredient] = useState('');
   const [currentStep, setCurrentStep] = useState('');
   const [currentTag, setCurrentTag] = useState('');
-  const [extracted, setExtracted] = useState(false);
 
   const addIngredient = (ingredient = currentIngredient) => {
     if (ingredient.trim()) {
@@ -281,64 +279,7 @@ const AddRecipe = ({ onClose, onSave }) => {
       }));
     }
   };
-
-  const handleExtractRecipe = async () => {
-    const videoId = extractYouTubeId(formData.youtubeUrl);
-    
-    if (!formData.youtubeUrl.trim() && !formData.transcript.trim()) {
-      alert('Chef dice: Necesito el enlace del video Y la transcripción. Sin uno de los dos, no puedo hacer magia.');
-      return;
-    }
-
-    setIsLoading(true);
-    
-    try {
-      let parsed = { title: '', description: '', ingredients: [], steps: [], time: '' };
-      
-      if (formData.transcript.trim()) {
-        parsed = parseRecipeFromText(formData.transcript);
-      }
-      
-      if (videoId) {
-        const ytData = await fetchYouTubeData(formData.youtubeUrl);
-        if (ytData) {
-          parsed.title = parsed.title || ytData.title;
-          parsed.description = parsed.description || `Video de ${ytData.author}`;
-        }
-      }
-      
-      const timeMatch = formData.transcript.match(/(\d+)\s*(?:min|mins|minutos|horas?|h)\b/i);
-      if (timeMatch && !parsed.time) {
-        parsed.time = timeMatch[0];
-      }
-      
-      const difficultyMatch = formData.transcript.match(/(?:difícil|dificultad\s*[:\-]?\s*)(?:alta|fácil|media|muy\s*fácil|muy\s*difícil)/i);
-      if (difficultyMatch) {
-        const diff = difficultyMatch[0].toLowerCase();
-        if (diff.includes('fácil') && !diff.includes('difícil')) parsed.difficulty = 'Fácil';
-        else if (diff.includes('media')) parsed.difficulty = 'Media';
-        else if (diff.includes('difícil') || diff.includes('alta')) parsed.difficulty = 'Alta';
-      }
-      
-      setFormData(prev => ({
-        ...prev,
-        title: parsed.title || prev.title,
-        description: parsed.description || prev.description,
-        ingredients: parsed.ingredients.length > 0 ? parsed.ingredients : prev.ingredients,
-        steps: parsed.steps.length > 0 ? parsed.steps : prev.steps,
-        time: parsed.time || prev.time
-      }));
-      
-      setExtracted(true);
-      
-    } catch (error) {
-      console.error('Error:', error);
-      alert('Chef dice: Algo salió mal. Intenta de nuevo.');
-    }
-    
-    setIsLoading(false);
-  };
-
+  
   const handleSubmit = () => {
     if (!formData.title.trim()) {
       alert('Chef dice: Toda receta merece un nombre. ¿Cómo la llamamos?');
@@ -494,7 +435,6 @@ const AddRecipe = ({ onClose, onSave }) => {
                       fontSize: '1rem'
                     }}
                   />
-                  {isLoading && <Loader size={24} className="animate-spin" style={{ color: 'var(--secondary)' }} />}
                 </div>
                 
                 {formData.youtubeUrl && extractYouTubeId(formData.youtubeUrl) && (
@@ -513,9 +453,9 @@ const AddRecipe = ({ onClose, onSave }) => {
                 )}
               </div>
 
-              {/* Transcript Box + Extract Button */}
+              {/* Paste Recipe Section */}
               <div className="glass" style={{ padding: '2rem', marginBottom: '1.5rem' }}>
-                <h3 style={{ marginBottom: '1rem' }}>📝 Transcripción / Descripción</h3>
+                <h3 style={{ marginBottom: '1rem' }}>📝 Copia y pega la receta</h3>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
                   En YouTube, haz clic en "...Mostrar más" debajo del video para ver la descripción,
                   o usa el botón de transcripción (tres puntos → "Mostrar transcripción").
@@ -524,75 +464,50 @@ const AddRecipe = ({ onClose, onSave }) => {
                 <textarea
                   value={formData.transcript}
                   onChange={(e) => {
-                    setFormData({ ...formData, transcript: e.target.value });
-                    setExtracted(false);
+                    const text = e.target.value;
+                    setFormData({ ...formData, transcript: text });
+                    const parsed = parseRecipeFromText(text);
+                    setFormData(prev => ({
+                      ...prev,
+                      transcript: text,
+                      title: prev.title || parsed.title || '',
+                      ingredients: parsed.ingredients.length > 0 ? parsed.ingredients : prev.ingredients,
+                      steps: parsed.steps.length > 0 ? parsed.steps : prev.steps,
+                      time: prev.time || parsed.time || ''
+                    }));
                   }}
-                  placeholder={`Pega aquí la transcripción o descripción del video. Por ejemplo:
+                  placeholder={`Pega aquí la transcripción o descripción del video. Detecto automáticamente:
 
 Ingredientes:
 - 2 huevos
 - 1 taza de harina
 - 200ml de leche
-- Azúcar al gusto
 
 Pasos:
 1. Mezclar los ingredientes secos
-2. Añadir los huevos y batir
-3. Agregar la leche poco a poco
-4. Cocinar en sartén caliente...`}
-                  rows={8}
+2. Añadir los huevos y batir...`}
+                  rows={10}
                   style={{
                     width: '100%',
                     padding: '1rem',
                     borderRadius: '12px',
-                    border: extracted ? '2px solid #27ae60' : '2px solid var(--accent)',
+                    border: '2px solid var(--accent)',
                     fontSize: '0.9rem',
                     fontFamily: 'inherit',
                     resize: 'vertical'
                   }}
                 />
                 
-                <button 
-                  onClick={handleExtractRecipe}
-                  className="btn btn-primary"
-                  disabled={isLoading}
-                  style={{ 
-                    width: '100%', 
-                    marginTop: '1rem', 
-                    justifyContent: 'center',
-                    padding: '1rem',
-                    fontSize: '1rem',
-                    background: isLoading ? '#95a5a6' : (extracted ? '#27ae60' : undefined)
-                  }}
-                >
-                  {isLoading ? (
-                    <>
-                      <Loader size={20} className="animate-spin" />
-                      Extrayendo receta...
-                    </>
-                  ) : extracted ? (
-                    <>
-                      <Check size={20} />
-                      ¡Receta extraída! Edita abajo si necesitas
-                    </>
-                  ) : (
-                    <>
-                      <Sparkles size={20} />
-                      Extraer Receta Completa
-                    </>
-                  )}
-                </button>
-
-                {extracted && (
+                {(formData.ingredients.length > 0 || formData.steps.length > 0) && (
                   <div style={{ 
                     marginTop: '1rem', 
-                    padding: '1rem', 
+                    padding: '0.75rem', 
                     backgroundColor: 'rgba(39, 174, 96, 0.1)', 
-                    borderRadius: '12px',
+                    borderRadius: '8px',
                     textAlign: 'center'
                   }}>
-                    <p style={{ margin: 0, color: '#27ae60', fontWeight: 500 }}>
-                      ✨ Se extrajeron {formData.ingredients.length} ingredientes y {formData.steps.length} pasos
+                    <p style={{ margin: 0, color: '#27ae60', fontWeight: 500, fontSize: '0.9rem' }}>
+                      ✨ Detectados: {formData.ingredients.length} ingredientes • {formData.steps.length} pasos
                     </p>
                   </div>
                 )}
