@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { X, Plus, Youtube, FileText, Link, Check, Loader, Wand2, Clipboard, Copy, Search, Sparkles } from 'lucide-react';
 
@@ -813,36 +814,39 @@ Pasos:
               <div style={{ 
                 backgroundColor: 'rgba(233, 237, 198, 0.3)', 
                 borderRadius: '12px', 
-                padding: '1rem',
+                padding: '0.75rem',
                 maxHeight: '300px',
                 overflowY: 'auto'
               }}>
                 {formData.ingredients.map((ing, index) => (
                   <div key={index} style={{ 
-                    padding: '0.75rem 1rem', 
+                    padding: '1rem', 
                     backgroundColor: 'white', 
                     borderRadius: '8px', 
                     marginBottom: '0.5rem',
                     display: 'flex', 
-                    justifyContent: 'space-between', 
                     alignItems: 'center',
-                    fontSize: '0.95rem',
-                    lineHeight: 1.5
+                    fontSize: '1rem',
+                    lineHeight: 1.6
                   }}>
-                    <span style={{ flex: 1, paddingRight: '1rem', wordBreak: 'break-word', color: 'var(--text-main)' }}>
-                      • {ing}
+                    <span style={{ flex: 1, color: '#2c3e50', fontWeight: 400 }}>
+                      {ing}
                     </span>
-                    <button onClick={() => removeIngredient(index)} style={{ 
-                      background: 'rgba(231, 76, 60, 0.1)', 
-                      border: 'none', 
-                      cursor: 'pointer', 
-                      color: '#e74c3c', 
-                      padding: '0.25rem 0.5rem', 
-                      fontSize: '1.1rem', 
-                      lineHeight: 1,
-                      borderRadius: '6px',
-                      flexShrink: 0
-                    }}>×</button>
+                    <button 
+                      onClick={() => removeIngredient(index)} 
+                      title="Eliminar"
+                      style={{ 
+                        background: 'none', 
+                        border: 'none', 
+                        cursor: 'pointer', 
+                        color: '#bdc3c7', 
+                        padding: '0.25rem 0.5rem', 
+                        fontSize: '1.25rem', 
+                        lineHeight: 1,
+                        flexShrink: 0,
+                        marginLeft: '0.5rem'
+                      }}
+                    >×</button>
                   </div>
                 ))}
               </div>
@@ -878,7 +882,7 @@ Pasos:
               <div style={{ 
                 backgroundColor: 'rgba(233, 237, 198, 0.3)', 
                 borderRadius: '12px', 
-                padding: '1rem',
+                padding: '0.75rem',
                 maxHeight: '350px',
                 overflowY: 'auto'
               }}>
@@ -891,34 +895,37 @@ Pasos:
                     display: 'flex', 
                     gap: '1rem',
                     alignItems: 'flex-start',
-                    fontSize: '0.95rem',
-                    lineHeight: 1.6
+                    fontSize: '1rem',
+                    lineHeight: 1.7
                   }}>
                     <span style={{ 
-                      backgroundColor: 'var(--primary)', 
+                      backgroundColor: '#3d6b4f', 
                       color: 'white', 
-                      width: '28px', 
-                      height: '28px', 
+                      minWidth: '32px', 
+                      height: '32px', 
                       borderRadius: '50%', 
                       display: 'flex', 
                       alignItems: 'center', 
                       justifyContent: 'center',
-                      fontSize: '0.85rem',
+                      fontSize: '0.9rem',
                       fontWeight: 600,
                       flexShrink: 0
                     }}>{index + 1}</span>
-                    <span style={{ flex: 1, wordBreak: 'break-word', color: 'var(--text-main)' }}>{step}</span>
-                    <button onClick={() => removeStep(index)} style={{ 
-                      background: 'rgba(231, 76, 60, 0.1)', 
-                      border: 'none', 
-                      cursor: 'pointer', 
-                      color: '#e74c3c', 
-                      padding: '0.25rem 0.5rem', 
-                      fontSize: '1.1rem', 
-                      lineHeight: 1,
-                      borderRadius: '6px',
-                      flexShrink: 0
-                    }}>×</button>
+                    <span style={{ flex: 1, wordBreak: 'break-word', color: '#2c3e50' }}>{step}</span>
+                    <button 
+                      onClick={() => removeStep(index)}
+                      title="Eliminar"
+                      style={{ 
+                        background: 'none', 
+                        border: 'none', 
+                        cursor: 'pointer', 
+                        color: '#bdc3c7', 
+                        padding: '0.25rem 0.5rem', 
+                        fontSize: '1.25rem', 
+                        lineHeight: 1,
+                        flexShrink: 0
+                      }}
+                    >×</button>
                   </div>
                 ))}
               </div>
