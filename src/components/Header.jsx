@@ -1,105 +1,83 @@
-import React from 'react';
-import { Plus } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom'
+import { useTheme } from '../context/ThemeContext'
+import { useAuth } from '../context/AuthContext'
+import { Home, Plus, Search, Video, UtensilsCrossed, Calculator, ShoppingCart, Moon, Sun, LogOut } from 'lucide-react'
 
-const Header = ({ onPlannerClick, onDiarioClick, onAddRecipeClick }) => {
+export default function Header() {
+  const { isDark, toggleTheme } = useTheme()
+  const { logout, user, profile } = useAuth()
+  const location = useLocation()
+
+  const mainNav = [
+    { icon: Home, path: '/', label: 'Inicio' },
+    { icon: Plus, path: '/create', label: 'Crear' },
+    { icon: Search, path: '/search', label: 'Buscar' },
+    { icon: UtensilsCrossed, path: '/category/desayunos', label: 'Cocinar' },
+  ]
+
   return (
-    <header className="glass" style={{
-      position: 'sticky',
-      top: '1rem',
-      margin: '1rem auto',
-      width: 'calc(100% - 2rem)',
-      zIndex: 1000,
-      padding: '0.75rem 2rem',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center'
-    }}>
-      <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <div style={{ position: 'relative' }}>
-          <svg 
-            width="32" 
-            height="32" 
-            viewBox="0 0 32 32" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-            style={{ marginTop: '4px' }}
-          >
-            <ellipse cx="16" cy="24" rx="10" ry="4" fill="#2C4A3E"/>
-            <path d="M6 24V16C6 12 10 8 16 8C22 8 26 12 26 16V24" fill="#2C4A3E"/>
-            <path d="M10 24C10 22 12 20 16 20C20 20 22 22 22 24" fill="#4A6E5D"/>
-            <circle cx="16" cy="8" r="3" fill="#D4A373"/>
-            <rect x="14" y="5" width="4" height="4" rx="1" fill="#D4A373"/>
-          </svg>
-          <h1 style={{ 
-            fontSize: '1.5rem', 
-            letterSpacing: '-0.5px',
-            margin: 0,
-            marginTop: '4px' 
-          }}>
-            MilenAroma
-          </h1>
-        </div>
-      </div>
-      
-      <nav style={{ display: 'flex', gap: '1rem' }}>
-        <button 
-          onClick={onAddRecipeClick}
-          style={{ 
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            color: 'var(--secondary)', 
-            fontWeight: 600,
-            background: 'none',
-            border: '2px solid var(--secondary)',
-            borderRadius: '12px',
-            padding: '0.5rem 1rem',
-            cursor: 'pointer',
-            fontSize: '0.9rem',
-            fontFamily: 'inherit',
-            transition: 'var(--transition)'
-          }}
-        >
-          <Plus size={18} />
-          Añadir
-        </button>
-        <button 
-          onClick={onPlannerClick}
-          style={{ 
-            textDecoration: 'none', 
-            color: 'var(--text-muted)', 
-            fontWeight: 500,
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            fontSize: '1rem',
-            fontFamily: 'inherit'
-          }}
-        >
-          Planner
-        </button>
-        <button 
-          onClick={onDiarioClick}
-          style={{ 
-            textDecoration: 'none', 
-            color: 'var(--text-muted)', 
-            fontWeight: 500,
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            fontSize: '1rem',
-            fontFamily: 'inherit'
-          }}
-        >
-          Diario
-        </button>
-      </nav>
-      
-      <button className="btn btn-primary">
-        Empezar a cocinar
-      </button>
-    </header>
-  );
-};
+    <>
+      <header className="fixed top-0 left-0 right-0 z-50 safe-area-top">
+        <div className="bg-[var(--surface)]/90 backdrop-blur-lg border-b border-[var(--primary)]/10">
+          <div className="max-w-lg mx-auto px-4 py-3">
+            <div className="flex items-center justify-between">
+              <Link to="/" className="flex items-center gap-2">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--primary)] to-[var(--primary-light)] flex items-center justify-center">
+                  <span className="text-white text-lg">🍳</span>
+                </div>
+                <div>
+                  <h1 className="font-display font-bold text-[var(--primary)] leading-tight">MilenAroma</h1>
+                  <p className="text-[8px] text-[var(--text-muted)] -mt-0.5">Tu asistente culinario</p>
+                </div>
+              </Link>
 
-export default Header;
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={toggleTheme}
+                  className="p-2 rounded-xl hover:bg-[var(--accent)]/50 transition-colors"
+                  aria-label="Toggle theme"
+                >
+                  {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                </button>
+                <button
+                  onClick={logout}
+                  className="p-2 rounded-xl hover:bg-red-100 text-red-500 transition-colors"
+                  aria-label="Logout"
+                >
+                  <LogOut className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Bottom Navigation */}
+      <nav className="fixed bottom-0 left-0 right-0 z-50 safe-area-bottom">
+        <div className="bg-[var(--surface)]/95 backdrop-blur-lg border-t border-[var(--primary)]/10">
+          <div className="max-w-lg mx-auto px-2">
+            <div className="flex items-center justify-around py-2">
+              {mainNav.map((item) => {
+                const isActive = location.pathname === item.path
+                return (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`flex flex-col items-center gap-1 px-4 py-2 rounded-xl transition-all ${
+                      isActive
+                        ? 'text-[var(--primary)] bg-[var(--primary)]/10'
+                        : 'text-[var(--text-muted)] hover:text-[var(--primary)]'
+                    }`}
+                  >
+                    <item.icon className="w-6 h-6" />
+                    <span className="text-xs font-medium">{item.label}</span>
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
+  )
+}
